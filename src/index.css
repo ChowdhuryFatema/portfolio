@@ -1,0 +1,198 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/* tailwind  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global  */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* banner  */
+.banner {
+  background-image: url(./assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* button css */
+
+.btn-all {
+    
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1em;
+}
+
+.extra-btn {
+  position: absolute;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 3px 20px #d94ce0;
+}
+
+/* [#E855DE] [#5400EE] */
+
+.extra-btn > span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #E855DE, #5400EE);
+  animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.extra-btn > span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #E855DE, #5400EE);
+  animation: animate2 2s linear infinite;
+}
+@keyframes animate2 {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+.extra-btn > span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #E855DE, #5400EE);
+  animation: animate3 2s linear infinite;
+}
+@keyframes animate3 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+.extra-btn > span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #E855DE, #5400EE);
+  animation: animate4 2s linear infinite;
+}
+
+@keyframes animate4 {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+/* btn end  */
+
+/* about tab  */
+
+.react-tabs__tab {
+  bottom: 0 !important;
+  padding: 10px 25px;
+  /* position: static; */
+  border-bottom: initial;
+}
+.react-tabs__tab--selected {
+  background: linear-gradient(to top, #E855DE, #5400EE);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+.react-tabs__tab-list {
+  /* border: 1px solid gray;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: fit-content; */
+  border: 0;
+  margin: 0;
+  
+}
+.about-tab {
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.footer-bg {
+  background-image: url('./assets/footer.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* project slider */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fader {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fader__slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.fader img {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+/* project  */
+.card-shadow {
+  box-shadow: 0 3px 20px #d84ce05e;
+}
+
+.projects {
+  background-image: url('./assets/project.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects .group svg {
+  color: black;
+}
