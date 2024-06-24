@@ -14,14 +14,14 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000)
+    }, 5000)
   }, [])
 
   return (
     <>
 
       {loading ?
-        <div className="bg-black">
+        <div className="bg-gradient-to-b from-indigo-500 via-[#ec38bc] to-[#3c1053]">
 
           <div className="flex justify-center items-center min-h-screen w-full">
             <div>

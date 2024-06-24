@@ -53,6 +53,7 @@ const Project1 = () => {
                             <Modal.Header>Website Name: Tech App</Modal.Header>
                             <Modal.Body>
                                 <div>
+                                    <h2>Technology:</h2>
                                     <div className="mb-5">
                                         <button className="btn btnShadow py-2 px-3 m-2 text-sm">Tailwind</button>
                                         <button className="btn btnShadow py-2 px-3 m-2 text-sm">DaisyUI & Mamba UI</button>
@@ -62,6 +63,7 @@ const Project1 = () => {
                                         <button className="btn btnShadow py-2 px-3 m-2 text-sm">Express Js</button>
                                         <button className="btn btnShadow py-2 px-3 m-2 text-sm">MongoDB</button>
                                     </div>
+                                    <h2>Features:</h2>
                                     <ul className="space-y-3 *:list-disc pl-6">
                                         <li>
                                             Tech App provides role-based dashboards: Admins manage users and roles, moderators approve products, and users manage their products and subscriptions.

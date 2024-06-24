@@ -237,9 +237,6 @@ body {
   position: relative;
 }
 
-
-element.style {}
-
 .css-1fisg8y {
   margin-top: 40px;
   height: 191px;
@@ -280,35 +277,25 @@ element.style {}
 }
 
 .skill {
-  background-image: url(https://web.programming-hero.com/home/whatWillLearn/techbg/html-active.svg);
+  background-image: url('./assets/footer.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 0;
 }
-
+.skill::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
 .shape {
   clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0% 100%, 0 28%);
 }
 
-@keyframes animation-lodkhm {
-  0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-  }
 
-  60% {
-    -webkit-transform: translateY(-60px);
-    -moz-transform: translateY(-60px);
-    -ms-transform: translateY(-60px);
-    transform: translateY(-60px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}

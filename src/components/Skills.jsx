@@ -3,10 +3,13 @@ import Marquee from "react-fast-marquee";
 const Skills = () => {
     return (
         <>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" d="M0,192L60,160C120,128,240,64,360,42.7C480,21,600,43,720,85.3C840,128,960,192,1080,186.7C1200,181,1320,107,1380,69.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            <div className="skill lg:-mb-10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" d="M0,96L48,122.7C96,149,192,203,288,208C384,213,480,171,576,133.3C672,96,768,64,864,58.7C960,53,1056,75,1152,96C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
             <Marquee>
-                <div className="py-20 mr-5">
+                <div className="mr-5">
 
                     <div className="flex gap-5">
                         <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#dd1818] shape flex justify-center items-center rounded-2xl">
@@ -14,7 +17,7 @@ const Skills = () => {
                         </div>
 
 
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#38ef7d] shape flex justify-center items-center rounded-2xl -mt-10">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#38ef7d] shape flex justify-center items-center rounded-2xl mt-10">
                             <div>
                                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">Node</h4>
@@ -22,50 +25,49 @@ const Skills = () => {
                         </div>
 
 
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#fdbb2d] shape flex justify-center items-center rounded-2xl -mt-10">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#fdbb2d] shape flex justify-center items-center rounded-2xl">
                             <div>
                                 <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">Firebase</h4>
                             </div>
                         </div>
 
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#45a247] shape flex justify-center items-center rounded-2xl">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#45a247] shape flex justify-center items-center rounded-2xl mt-10">
                             <div>
                                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">MongoDB</h4>
                             </div>
                         </div>
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#1CB5E0] shape flex justify-center items-center rounded-2xl -mt-10">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#1CB5E0] shape flex justify-center items-center rounded-2xl">
                             <div>
                                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">React</h4>
                             </div>
                         </div>
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#155799] shape flex justify-center items-center rounded-2xl">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#155799] shape flex justify-center items-center rounded-2xl mt-10">
                             <div>
                                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">CSS</h4>
                             </div>
                         </div>
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#F2C94C] shape flex justify-center items-center rounded-2xl -mt-10">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#F2C94C] shape flex justify-center items-center rounded-2xl">
                             <div>
                                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">Javascript</h4>
                             </div>
                         </div>
-                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#56CCF2] shape flex justify-center items-center rounded-2xl -mt-10">
+                        <div className="w-44 h-44 bg-gradient-to-b from-[#333333] to-[#56CCF2] shape flex justify-center items-center rounded-2xl mt-10">
                             <div>
                                 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="" />
                                 <h4 className="text-xl font-semibold text-white">Tailwind</h4>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </Marquee>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" d="M0,192L60,160C120,128,240,64,360,42.7C480,21,600,43,720,85.3C840,128,960,192,1080,186.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div className="skill mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" d="M0,96L48,122.7C96,149,192,203,288,208C384,213,480,171,576,133.3C672,96,768,64,864,58.7C960,53,1056,75,1152,96C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            </div>
         </>
     );
 };
