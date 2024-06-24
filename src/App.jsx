@@ -1,21 +1,48 @@
+import { useEffect, useState } from "react"
 import About from "./components/About"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
-
+import logo from "./assets/logo/logo.png";
+import Skills from "./components/Skills"
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000)
+  }, [])
 
   return (
     <>
-      <div>
-        <Hero></Hero>
-        <About></About>
-        <Projects></Projects>
-        <ContactUs></ContactUs>
-        <Footer></Footer>
-      </div>
+
+      {loading ?
+        <div className="bg-black">
+
+          <div className="flex justify-center items-center min-h-screen w-full">
+            <div>
+              <img className="w-60" src={logo} alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        :
+
+        <div>
+          <Hero></Hero>
+          <About></About>
+          <Projects></Projects>
+          <Skills></Skills>
+          <ContactUs></ContactUs>
+          <Footer></Footer>
+        </div>
+      }
+
 
     </>
   )

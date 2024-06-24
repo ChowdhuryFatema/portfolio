@@ -1,6 +1,6 @@
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
+import logo from "../assets/logo/logo.png";
 
 const Footer = () => {
     return (
@@ -11,17 +11,22 @@ const Footer = () => {
 
                 <div className="flex justify-center items-center py-20">
                     <div className="text-white text-center w-full pt-5 md:pt-20 lg:pt-40 space-y-5">
-                        <h2 className="text-3xl">daisyUI</h2>
+                        <div className="flex justify-center items-center">
+                            <a href="#">
+                                <img className="w-44" src={logo} alt="" />
+                            </a>
+                        </div>
                         <ul className="flex justify-center">
+                            <li><a href="#banner" className="border-r border-white text-white px-3 md:px-4 text-sm lg:text-lg">Home</a></li>
                             <li><a href="#about" className="border-r border-white text-white px-3 md:px-4 text-sm lg:text-lg">ABOUT</a></li>
-                            <li><a className="border-r border-white text-white px-3 md:px-4 text-sm lg:text-lg">PROJECTS</a></li>
-                            <li><a className="border-r border-white text-white px-3 md:px-4 text-sm lg:text-lg">SERVICES</a></li>
+                            <li><a href="#projects" className="border-r border-white text-white px-3 md:px-4 text-sm lg:text-lg">PROJECTS</a></li>
                             <li><a href="#contact" className="text-white px-3 md:px-4 text-sm lg:text-lg">CONTACT</a></li>
+                            
                         </ul>
                         <div className="flex gap-3 justify-center">
-                            <a target="_blank" href="https://www.facebook.com/fatema.chowdhury.568089" className="text-2xl ml-2"><FaFacebookSquare className="text-[#159CF8]" /></a>
-                            <a target="_blank" href="https://github.com/ChowdhuryFatema" className="text-2xl ml-2"><FaGithubSquare /></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/fatemachowdhury318" className="text-2xl ml-2"><FaLinkedin className="text-[#0B66C3]" /></a>
+                            {/* <a target="_blank" href="" className="text-2xl ml-2"><FaFacebookSquare className="text-[#159CF8]" /></a> */}
+                            <a target="_blank" href="https://github.com/ChowdhuryFatema" className="text-3xl ml-2 social-icon text-[#911c89] bg-white"><FaGithubSquare /></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/fatemachowdhury318" className="text-3xl ml-2 social-icon"><FaLinkedin className="text-[#911c89] bg-white" /></a>
                         </div>
                         <p className="text-sm md:text-lg">Designed & Built by Fatema Chowdhury</p>
                     </div>

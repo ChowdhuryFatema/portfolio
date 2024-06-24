@@ -9,9 +9,22 @@
 /* global  */
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
+
+
+
+
 body {
   font-family: "Tilt Neon", sans-serif;
+}
+
+/* navbar  */
+.nav-link:hover {
+  color: #E855DE !important;
 }
 
 /* banner  */
@@ -27,7 +40,7 @@ body {
 /* button css */
 
 .btn-all {
-    
+
   text-decoration: none;
   padding: 12px 20px;
   font-size: 1em;
@@ -42,7 +55,7 @@ body {
 
 /* [#E855DE] [#5400EE] */
 
-.extra-btn > span:nth-child(1) {
+.extra-btn>span:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,16 +64,18 @@ body {
   background: linear-gradient(to right, #E855DE, #5400EE);
   animation: animate1 2s linear infinite;
 }
+
 @keyframes animate1 {
   0% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
+
   100% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
-.extra-btn > span:nth-child(2) {
+.extra-btn>span:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -69,16 +84,18 @@ body {
   background: linear-gradient(to bottom, #E855DE, #5400EE);
   animation: animate2 2s linear infinite;
 }
+
 @keyframes animate2 {
   0% {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
+
   100% {
-      transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
-.extra-btn > span:nth-child(3) {
+.extra-btn>span:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -87,15 +104,18 @@ body {
   background: linear-gradient(to left, #E855DE, #5400EE);
   animation: animate3 2s linear infinite;
 }
+
 @keyframes animate3 {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
+
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
-.extra-btn > span:nth-child(4) {
+
+.extra-btn>span:nth-child(4) {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,10 +127,11 @@ body {
 
 @keyframes animate4 {
   0% {
-      transform: translateY(100%);
+    transform: translateY(100%);
   }
+
   100% {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
 
@@ -124,12 +145,14 @@ body {
   /* position: static; */
   border-bottom: initial;
 }
+
 .react-tabs__tab--selected {
   background: linear-gradient(to top, #E855DE, #5400EE);
   color: #fff;
   border-radius: 30px;
   padding: 10px 25px;
 }
+
 .react-tabs__tab-list {
   /* border: 1px solid gray;
   border-radius: 30px;
@@ -137,8 +160,9 @@ body {
   width: fit-content; */
   border: 0;
   margin: 0;
-  
+
 }
+
 .about-tab {
   border: 1px solid gray;
   border-radius: 30px;
@@ -159,6 +183,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .fader {
   height: 300px;
   position: relative;
@@ -182,17 +207,108 @@ body {
 
 
 /* project  */
-.card-shadow {
-  box-shadow: 0 3px 20px #d84ce05e;
+.projects {
+  box-shadow: 0 3px 20px #d84ce08f;
 }
 
-.projects {
-  background-image: url('./assets/project.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.btnShadow {
+  box-shadow: 0 3px 20px #d84ce073;
 }
 
 .projects .group svg {
   color: black;
+}
+
+
+/* skills  */
+.css-pvag7m {
+  margin-top: 0px;
+  height: 191px;
+  width: 179px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 8px;
+  animation: 10s linear 1s infinite normal none running animation-lodkhm;
+  position: relative;
+}
+
+
+element.style {}
+
+.css-1fisg8y {
+  margin-top: 40px;
+  height: 191px;
+  width: 179px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  -webkit-animation: animation-lodkhm 10s linear infinite;
+  animation: animation-lodkhm 10s linear infinite;
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+  position: relative;
+}
+
+.css-eokicu,
+.css-1ivnuo {
+  margin: 0px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.skill {
+  background-image: url(https://web.programming-hero.com/home/whatWillLearn/techbg/html-active.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shape {
+  clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0% 100%, 0 28%);
+}
+
+@keyframes animation-lodkhm {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }

@@ -21,7 +21,7 @@ const ContactUs = () => {
 
     return (
         <div id='contact' className="max-w-6xl mx-auto px-5 my-10 md:my-20">
-            <section className="dark:bg-gray-100 dark:text-gray-900">
+            <section className="dark:bg-gray-100 dark:text-gray-900 md:mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:gap-20">
                     <div className="">
                         <h1 className="text-4xl font-bold">Let&rsquo;s link up</h1>

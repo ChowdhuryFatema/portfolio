@@ -8,10 +8,12 @@ import Header from './Header';
 const Hero = () => {
 
     return (
-        <div className="banner min-h-[35vh] md:min-h-[60vh]">
+        <div id="banner" className="banner min-h-[35vh] md:min-h-[60vh]">
             <div className="bg-black bg-opacity-50">
-                <div className="text-white max-w-6xl mx-auto px-5">
+                <div className="text-white max-w-6xl mx-auto px-3">
                     <Header></Header>
+                </div>
+                <div className="text-white max-w-6xl mx-auto px-5">
 
                     <div className="flex flex-col justify-center min-h-[35vh] md:min-h-[60vh] pt-5 md:pt-10 lg:pt-28">
                         <div>
@@ -57,7 +59,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" d="M0,320L60,288C120,256,240,192,360,165.3C480,139,600,149,720,176C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" d="M0,320L60,288C120,256,240,192,360,165.3C480,139,600,149,720,176C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
             </div>
         </div>

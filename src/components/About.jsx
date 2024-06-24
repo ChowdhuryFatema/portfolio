@@ -5,18 +5,21 @@ import nextImg from '../assets/skill-icon/next.png';
 import reactRouter from '../assets/skill-icon/react-router.svg';
 import expressImg from '../assets/skill-icon/express.png';
 import githubImg from '../assets/skill-icon/github-logo.png';
+import dividerImg from '../assets/divider.png';
+import { HiMiniArrowUpTray } from 'react-icons/hi2';
 
 const About = () => {
     return (
         <div id="about" className=''>
             <div className="max-w-6xl mx-auto px-5">
-                <div className='mb-5 md:mb-10'>
-                    <h1 className='text-center font-bold text-3xl md:text-5xl'>About</h1>
+                <div className='mb-5 md:mb-12 flex flex-col items-center'>
+                    <h1 className='text-center font-bold text-3xl md:text-5xl pb-2'>Meet Fatema</h1>
+                    <img src={dividerImg} alt="" />
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between">
                     <div>
-                        <div className='lg:-mt-28'>
-                            <dotlottie-player className="w-[600px] h-[600px]" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                        <div className='lg:-mt-10'>
+                            <dotlottie-player className="about-img" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                         </div>
                     </div>
                     <div>
@@ -25,27 +28,25 @@ const About = () => {
                                 <TabList>
                                     <Tab>About</Tab>
                                     <Tab>Skills</Tab>
-                                    <Tab>extra</Tab>
+                                    <Tab>Education</Tab>
                                 </TabList>
                             </div>
 
                             <TabPanel>
-                                <div>
+                                <div className='mt-10'>
                                     <div className='space-y-3'>
                                         <p>I&rsquo;m Fatema Chowdhury, a dedicated Frontend React Developer with a passion for creating dynamic and responsive web applications. I thrive on transforming complex problems into intuitive user interfaces using React.</p>
                                         <p>
                                             Currently, I am working on diverse projects that utilize the power of React to build intuitive and high-performance user interfaces. My focus is on writing clean, maintainable code and leveraging best practices to deliver exceptional user experiences.
                                         </p>
-                                        <h1 className='text-xl font-bold text-[#d94ce0]'>Education</h1>
-                                        <ul className='ml-5'>
-                                            <li className='list-disc'>Fazil | Institute of Jameul Ulum Fazil (Degree) Madrasah
-                                            </li>
-                                        </ul>
+                                        <p>
+                                            My goal is to continuously enhance my skills in front-end development and explore new technologies and frameworks. I aim to contribute to innovative projects that push the boundaries of web development, and I am eager to collaborate with other professionals to achieve outstanding results.
+                                        </p>
                                     </div>
                                 </div>
                             </TabPanel>
                             <TabPanel>
-                                <div className='grid grid-cols-3 gap-5'>
+                                <div className='grid grid-cols-3 gap-5 mt-10'>
                                     <div>
                                         <h3 className='text-xl font-bold text-[#d94ce0] pb-3'>Frontend</h3>
                                         <ul className='space-y-1'>
@@ -79,7 +80,7 @@ const About = () => {
                                             </li>
                                             <li className="flex gap-2">
                                                 <img className='w-5' src={reactRouter} alt="" />
-                                                <h4 className="font-semibold">Nextjs</h4>
+                                                <h4 className="font-semibold">React router dom</h4>
                                             </li>
                                             <li className="flex gap-2">
                                                 <img className='w-5' src={nextImg} alt="" />
@@ -100,7 +101,7 @@ const About = () => {
                                             </li>
                                             <li className="flex gap-2">
                                                 <img className='w-5' src={expressImg} alt="" />
-                                                <h4 className="font-semibold">Tailwind</h4>
+                                                <h4 className="font-semibold">Expressjs</h4>
                                             </li>
                                             <li className="flex gap-2">
                                                 <img className='w-5' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="" />
@@ -130,7 +131,25 @@ const About = () => {
                                 </div>
                             </TabPanel>
                             <TabPanel>
-                                <h2>extra</h2>
+                                <ul className='ml-5 mt-10'>
+                                    <li className='list-disc'>Fazil | Institute of Jameul Ulum Fazil (Degree) Madrasah
+                                    </li>
+
+                                </ul>
+                                <ul className='ml-5 mt-5'>
+                                    <li className='list-disc flex'>
+                                            Web development Course
+                                        <span className='flex gap-2 items-center ml-1 md:ml-7'>
+                                            - Certificate <HiMiniArrowUpTray />
+                                        </span>
+                                    </li>
+                                    <li className='list-disc flex'>
+                                            Communication hacks
+                                        <span className='flex gap-2 items-center ml-1 md:ml-7'>
+                                            - Certificate <HiMiniArrowUpTray />
+                                        </span>
+                                    </li>
+                                </ul>
                             </TabPanel>
                         </Tabs>
                     </div>
