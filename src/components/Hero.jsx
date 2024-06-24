@@ -8,14 +8,14 @@ import Header from './Header';
 const Hero = () => {
 
     return (
-        <div id="banner" className="banner min-h-[35vh] md:min-h-[60vh]">
+        <div id="banner" className="banner min-h-[50vh] md:min-h-[60vh]">
             <div className="bg-black bg-opacity-50">
                 <div className="text-white max-w-6xl mx-auto px-3">
                     <Header></Header>
                 </div>
                 <div className="text-white max-w-6xl mx-auto px-5">
 
-                    <div className="flex flex-col justify-center min-h-[35vh] md:min-h-[60vh] pt-5 md:pt-10 lg:pt-28">
+                    <div className="flex flex-col justify-center min-h-[50vh] md:min-h-[60vh] pt-5 md:pt-10 lg:pt-28">
                         <div>
                             <h4 className="text-3xl md:text-4xl text-[#e9edf8]">Greetings!</h4>
                             <img className='w-60' src={dividerImg} alt="" />
