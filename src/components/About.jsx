@@ -7,6 +7,7 @@ import expressImg from '../assets/skill-icon/express.png';
 import githubImg from '../assets/skill-icon/github-logo.png';
 import dividerImg from '../assets/divider.png';
 import { HiMiniArrowUpTray } from 'react-icons/hi2';
+import communicationHacks from '../assets/communication-hacks-certificate.pdf';
 
 const About = () => {
     return (
@@ -19,7 +20,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between">
                     <div>
                         <div className='lg:-mt-10'>
-                            <dotlottie-player className="about-img" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                            <dotlottie-player className="about-img" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent"  speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                         </div>
                     </div>
                     <div>
@@ -146,7 +147,10 @@ const About = () => {
                                     <li className='list-disc flex'>
                                             Communication hacks
                                         <span className='flex gap-2 items-center ml-1 md:ml-7'>
+                                            <a className='flex items-center gap-2' href={communicationHacks} download >
                                             - Certificate <HiMiniArrowUpTray />
+                                            </a>
+                                            
                                         </span>
                                     </li>
                                 </ul>
