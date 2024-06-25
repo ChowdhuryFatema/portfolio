@@ -207,12 +207,33 @@ body {
 
 
 /* project  */
+
+.color-gradient {
+  background: linear-gradient(75deg, #ff00cc, #5400EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-btn {
+  background: linear-gradient(75deg, #ff00cc, #5400EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .5s;
+}
+
+.project-btn:hover {
+  background: linear-gradient(to top, #E855DE, #5400EE);
+  -webkit-background-clip: linear-gradient(to top, #E855DE, #5400EE);
+  -webkit-text-fill-color: #ffffff !important;
+  transition: .5s;
+}
+
 .projects {
   box-shadow: 0 3px 20px #d84ce08f;
 }
 
 .btnShadow {
-  box-shadow: 0 3px 20px #d84ce073;
+  box-shadow: 0 3px 20px #d84ce0be;
 }
 
 .projects .group svg {
@@ -284,6 +305,7 @@ body {
   position: relative;
   z-index: 0;
 }
+
 .skill::before {
   content: '';
   width: 100%;
@@ -294,8 +316,7 @@ body {
   background-color: #ffffff;
   z-index: 1;
 }
+
 .shape {
   clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0% 100%, 0 28%);
 }
-
-

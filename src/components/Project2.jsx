@@ -46,15 +46,22 @@ const Project2 = () => {
                     <img sizes="full" src={img16} alt="..." />
                 </Carousel>
             </div>
-            <div className="bg-white flex justify-center p-5 border-t">
-                <div className="inline-flex rounded-md shadow-sm" role="group">
-                    <button onClick={() => setOpenModal(true)} type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+            <div className="bg-white flex justify-center p-5 border-t h-20 lg:h-24">
+                <div className="inline-flex extra-btn border border-[#E855DE] btnShadow" role="group">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <button onClick={() => setOpenModal(true)} type="button" className="inline-flex items-center px-4 py-2 text-sm bg-transparent project-btn font-bold hover:text-white md:text-lg border-r border-[#E855DE]">
                         Details
                     </button>
                     <Modal show={openModal} onClose={() => setOpenModal(false)}>
-                        <Modal.Header>Website Name: Library</Modal.Header>
+                        <Modal.Header>
+                            <h2 className="font-bold text-2xl md:text-3xl color-gradient">Website Name: Library</h2>
+                        </Modal.Header>
                         <Modal.Body>
                             <div>
+                                <h2 className="font-bold text-xl mb-5 color-gradient"> Technology Used:</h2>
                                 <div className="mb-5">
                                     <button className="btn btnShadow py-2 px-3 m-2">Tailwind</button>
                                     <button className="btn btnShadow py-2 px-3 m-2">DaisyUI & Mamba UI</button>
@@ -64,6 +71,7 @@ const Project2 = () => {
                                     <button className="btn btnShadow py-2 px-3 m-2">Express Js</button>
                                     <button className="btn btnShadow py-2 px-3 m-2">MongoDB</button>
                                 </div>
+                                <h2 className="font-bold text-xl mb-5 color-gradient">Project Features:</h2>
                                 <ul className="space-y-3 *:list-disc pl-6">
                                     <li>
                                         This is a online library store management website.
@@ -99,14 +107,14 @@ const Project2 = () => {
                         </Modal.Body>
                     </Modal>
 
-                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm bg-transparent project-btn font-bold hover:text-white md:text-lg border-r border-[#E855DE]">
                         <a target="_blank" href="https://library-2dd53.web.app/">Live</a>
                     </button>
-                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-l border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm bg-transparent project-btn font-bold hover:text-white md:text-lg border-r border-[#E855DE]">
                         <a target="_blank" href="https://github.com/ChowdhuryFatema/library-client">Client</a>
 
                     </button>
-                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                    <button type="button" className="inline-flex items-center px-4 py-2 text-sm bg-transparent project-btn font-bold hover:text-white md:text-lg border-r border-[#E855DE]">
 
                         <a target="_blank" href="https://github.com/ChowdhuryFatema/library-server">
                             Server
