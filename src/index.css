@@ -242,10 +242,9 @@ body {
 
 
 /* skills  */
-.css-pvag7m {
-  margin-top: 0px;
-  height: 191px;
-  width: 179px;
+
+
+.css-12e6si6, .css-pvag7m, .css-bdd8dj, .css-qp7rew, .css-175nk32 {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -253,9 +252,6 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  gap: 8px;
-  animation: 10s linear 1s infinite normal none running animation-lodkhm;
-  position: relative;
 }
 
 .css-1fisg8y {

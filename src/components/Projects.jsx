@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id="projects" className="my-10 md:my-20">
       <div>
-        <div className='mb-5 md:mb-12 flex flex-col items-center'>
+        <div className='mb-10 md:mb-12 flex flex-col items-center'>
           <h1 className='text-center font-bold text-3xl md:text-5xl pb-2'>My Projects</h1>
           <img src={dividerImg} alt="" />
         </div>
