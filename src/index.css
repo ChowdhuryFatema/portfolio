@@ -29,7 +29,7 @@ body {
 
 /* banner  */
 .banner {
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/banner.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,8 +52,6 @@ body {
   background: transparent;
   box-shadow: 0 3px 20px #d94ce0;
 }
-
-/* [#E855DE] [#5400EE] */
 
 .extra-btn>span:nth-child(1) {
   position: absolute;
@@ -229,11 +227,11 @@ body {
 }
 
 .projects {
-  box-shadow: 0 3px 20px #d84ce08f;
+  box-shadow: 0 3px 20px #d84ce052;
 }
 
 .btnShadow {
-  box-shadow: 0 3px 20px #d84ce0be;
+  box-shadow: 0 3px 20px #d84ce069;
 }
 
 .projects .group svg {

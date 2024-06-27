@@ -20,7 +20,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between">
                     <div>
                         <div className='lg:-mt-10'>
-                            <dotlottie-player className="about-img" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent"  speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                            <dotlottie-player className="about-img" src="https://lottie.host/708c872b-a380-4895-a12c-ef0f449e38b6/rWnqOdkkhD.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                         </div>
                     </div>
                     <div>
@@ -32,13 +32,12 @@ const About = () => {
                                     <Tab>Education</Tab>
                                 </TabList>
                             </div>
-
                             <TabPanel>
                                 <div className='mt-10'>
                                     <div className='space-y-3'>
                                         <p>I&rsquo;m Fatema Chowdhury, a dedicated Frontend React Developer with a passion for creating dynamic and responsive web applications. I thrive on transforming complex problems into intuitive user interfaces using React.</p>
                                         <p>
-                                            Currently, I am working on diverse projects that utilize the power of React to build intuitive and high-performance user interfaces. My focus is on writing clean, maintainable code and leveraging best practices to deliver exceptional user experiences.
+                                          Currently, I am working on diverse projects that utilize the power of React to build intuitive and high-performance user interfaces. My focus is on writing clean, maintainable code and leveraging best practices to deliver exceptional user experiences.
                                         </p>
                                         <p>
                                             My goal is to continuously enhance my skills in front-end development and explore new technologies and frameworks. I aim to contribute to innovative projects that push the boundaries of web development, and I am eager to collaborate with other professionals to achieve outstanding results.
@@ -139,18 +138,18 @@ const About = () => {
                                 </ul>
                                 <ul className='ml-5 mt-5'>
                                     <li className='list-disc flex'>
-                                            Web development Course
+                                        Web development Course
                                         <span className='flex gap-2 items-center ml-1 md:ml-7'>
                                             - Certificate <HiMiniArrowUpTray />
                                         </span>
                                     </li>
                                     <li className='list-disc flex'>
-                                            Communication hacks
+                                        Communication hacks
                                         <span className='flex gap-2 items-center ml-1 md:ml-7'>
                                             <a className='flex items-center gap-2' href={communicationHacks} download >
-                                            - Certificate <HiMiniArrowUpTray />
+                                                - Certificate <HiMiniArrowUpTray />
                                             </a>
-                                            
+
                                         </span>
                                     </li>
                                 </ul>
